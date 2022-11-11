@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.settings_input_component),
-            color: _showSettings ? Colors.amber : Colors.white,
+            color: _showSettings ? Colors.amber : Color.fromARGB(255, 0, 0, 0),
             onPressed: () {
               setState(() {
                 _showSettings = !_showSettings;
