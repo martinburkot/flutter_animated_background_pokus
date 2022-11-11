@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Animated Background Demo',
+      title: 'My Animated Background Demo',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
         elevatedButtonTheme: ElevatedButtonThemeData(
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           primary: Color(0xffe0e0e0),
         )),
       ),
-      home: new MyHomePage(title: 'Animated Background Demo'),
+      home: new MyHomePage(title: 'My Animated Background Demo'),
     );
   }
 }
@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   int _behaviourIndex = 0;
   Behaviour? _behaviour;
 
-  bool _showSettings = false;
+  bool _showSettings = true;
 
   @override
   Widget build(BuildContext context) {
